@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: hsl(167, 72%, 68%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#time {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #dd91d9;
+    cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+    background-color: #45a049;
+}
+
+.lap-times {
+    margin-top: 30px;
+}
+
+.lap-times h2 {
+    margin-bottom: 10px;
+}
+
+#lap-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+#lap-list li {
+    margin-bottom: 5px;
+}
